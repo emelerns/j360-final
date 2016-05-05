@@ -1,0 +1,127 @@
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif);
+body {
+  background-color:  #CC9933;
+font-family: 'Droid Serif', serif;}
+section h1 {
+  font-size: 65px;
+  font-weight: 300;
+  margin-top: 200px;
+}
+/*Navigation*/
+nav {
+  width: 40%;
+}
+nav ul {
+list-style-type: none;
+overflow: hidden;
+background-color: #000033;
+}
+
+nav li {
+float: left;
+}
+
+nav a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+nav a:hover {
+background-color: beige;
+}
+img {
+  height: 420px;
+  width: 600px;
+}
+
+/*containers and multi-column layout*/
+.image {
+  position:absolute;
+}
+
+.container {
+    margin: 10px 4%;
+}
+.row {
+    width: 100%;
+    margin-bottom: 20px;
+    display: block;
+}
+.container::after, .row::after {
+    clear: both;
+    display: table;
+    content: "";
+}
+.col {
+    float: left;
+    display: block;
+}
+
+.col:last-child {
+    margin: 0;
+}
+
+.col-4 {
+    width: 100%;
+    margin-right: 0;
+}
+
+@media (min-width: 768px) {
+    .image {
+      width: 750px;
+      margin: 15px auto;
+    }
+    .container {
+        width: 750px;
+        margin: 15px auto;
+    }
+
+    .col-4 {
+        width: 31.4666667%;
+        margin-right: 2.6666667%;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .image {
+      width: 960px;
+      margin: 20px auto 5px;
+    }
+    .container {
+        width: 960px;
+        margin: 20px auto 5px;
+    }
+
+    .col-4 {
+        width: 31.875%;
+        margin-right: 2.1875%;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .image {
+      width: 1000px;
+      margin: 40px auto 10px;
+    }
+    .container {
+        width: 1000px;
+        margin: 40px auto 10px;
+    }
+
+    .col-4 {
+        width: 32%;
+        margin-right: 2%;
+    }
+
+    h1 {
+        font-size: 3.75em;
+        font-weight: 200;
+    }
+}
